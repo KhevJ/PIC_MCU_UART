@@ -21,9 +21,7 @@ extern "C" {
 
 void InitUART2(void);
 void XmitUART2(char, unsigned int);
-//void RxUART2(void);
 
-//void __attribute__ ((interrupt, no_auto_psv)) _U2RXInterrupt(void);
 void __attribute__ ((interrupt, no_auto_psv)) _U2TXInterrupt(void); 
 
 void Disp2Hex(unsigned int);

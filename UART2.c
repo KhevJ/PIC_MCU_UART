@@ -3,7 +3,7 @@
 #include "string.h"
 
 unsigned int clkval;
-//char RxChar;
+
 
 ///// Initialization of UART 2 module.
 //// From Section 18 of PIC24F Datasheet
@@ -114,25 +114,8 @@ void XmitUART2(char CharNum, unsigned int repeatNo)
 
 
 
-//void RxUART2(void)
-//{
-//    XmitUART2(RxChar,1);
-//    return;
-//}
 
-// Interrupt service routine for UART TX
-//void __attribute__ ((interrupt, no_auto_psv)) _U2RXInterrupt(void) {
-//	IFS1bits.U2RXIF = 0;
-//    U2RXREG = 0;
-//    U2RXREG = 0;
-//    U2RXREG = 0;
-//    U2RXREG = 0;
-//    U2RXREG = 0;
-//    RxChar = U2RXREG;
-//    Nop();
-//    Nop();
-//    return;
-//}
+
 
 // Interrupt service routine for UART TX
 
